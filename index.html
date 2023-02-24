@@ -5,24 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    body {
-      background-color: hsl(220, 15%, 55%);
+    body { 
+      background-color: hsl(212, 45%, 89%);
+      /*display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;*/
+    }
+    .card {
+      background-color:  hsl(0, 0%, 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 3rem 2rem;
+      /* height: 80vh; */
+      border-radius: 1rem;
+    }
+
+    .card img {
+      width: 90%;
+      height: 90%;
+      border-radius: 1rem;
+      margin: 1rem;
+    }
+
+    .text {
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      margin: .5rem 1rem 2rem;
+    }
+
+    h2 {
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: .95rem;
+      color: hsl(220, 15%, 55%)
     }
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
+  <div class="card">
+    <img src="./images/image-qr-code.png" alt="QR Code image" />
+    <div class="text">
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Hillary Wando</a>.
